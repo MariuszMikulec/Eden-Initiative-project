@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+
+import './scss/App.scss';
+
+import Hamburger from "./React/Hamburger";
 
 function App() {
   return (
       <>
       <header className="App-header" id="main page">
-        <h1>Eden Initiative</h1>
-        <div>
-          <a href="#main page">Strona główna </a>
-          <a>Projekty </a>
-          <a href="#about us">O nas </a>
-          <a href="benefits">Korzyści </a>
-          <a href="#contact us">Kontakt </a>
+       // <div className="nav_stripe">
+          <span className="testowy"/>
+          <h1>Eden Initiative</h1>
+          <Hamburger/>
+       // </div>
 
-        </div>
-        <button>Join us!</button>
+        <div>   <a className="join" href='#about'><h2>Join us!</h2></a></div>
 
       </header>
-        <section id="about us">
+        <section id="about">
           <div>
 
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem dignissimos dolor id nobis officia placeat repudiandae sunt vel vitae?</p>
@@ -32,11 +31,11 @@ function App() {
         <section id="benefits">
 
         </section>
-        <footer id="contact us">
+        <footer id="contact">
 
         </footer>
     </>
   );
-}
+};
 
 export default App;

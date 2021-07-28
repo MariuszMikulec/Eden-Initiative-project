@@ -1,0 +1,39 @@
+.testowy{
+  padding: 5px;
+  background: cornflowerblue;
+}
+.App-header{
+  /*.nav_stripe{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 1px;
+  }
+
+   */
+  h1{
+    font-family: $title-fonts;
+    text-align: center;
+  }
+  div {
+
+    .join {
+      display: flex;
+      justify-content: center;
+      padding: 0.5em;
+      margin: 2em 7em;
+      background: aquamarine;
+      border-radius: 40px;
+      text-decoration: none;
+      color: #232323;
+      font-family:$title-fonts ;
+      font-weight: bold;
+      font-size: 1em;
+
+
+
+
+
+    }
+  }
+}
+
