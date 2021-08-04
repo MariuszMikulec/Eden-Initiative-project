@@ -1,21 +1,30 @@
-.testowy{
+html{
+  width: 100vw;
+}
+#root{
+  background: lightslategray;
+}
+/*.testowy{
   padding: 5px;
   background: cornflowerblue;
-}
+  width: 30%;
+}*/
 .App-header{
-  /*.nav_stripe{
+  .nav_stripe{
     display: flex;
     justify-content: space-between;
-    margin: 0 1px;
+    margin: 1em 1px;
+    width: 100%;
+    padding-right: 2em;
   }
-
-   */
   h1{
     font-family: $title-fonts;
     text-align: center;
   }
-  div {
-
+  .joinButton {
+    display: flex;
+    justify-content: center;
+  width: 100vw;
     .join {
       display: flex;
       justify-content: center;
@@ -28,10 +37,95 @@
       font-family:$title-fonts ;
       font-weight: bold;
       font-size: 1em;
+      width: 30%;
+    }
+  }
+}
 
+.about{
+background: lightgreen;
+  div{
+    display: flex;
 
+    .seamus{
+    }
+    .quoteBox{
+      display: flex;
+      align-self: center;
+      .quote {
+        font-size: 40px;
+        font-family: $title-fonts;
+      }
+    }
 
+  }
+  p{}
+}
+.arrowCont {
+  background: lightgreen;
+  .arrow {
+    display: flex;
+    justify-content: center;
+    background: lightgreen;
 
+    .scrollTopButton {
+      position: relative;
+      background: white;
+      border-radius: 36px;
+      top: 62%;
+      z-index: 1;
+    }
+  }
+}
+footer{
+  //position: relative;
+ // margin: 1em;
+  background: lightslategray;
+  div{
+    padding-top: 10px;
+    margin: 0 1em;
+    display: flex;
+    justify-content: space-between;
+
+    .contact {
+      flex-direction: column;
+      justify-content: center;
+      h2{
+        align-self: center;
+        font-size: 18px;
+      }
+      p {
+        align-self: center;
+      }
+    }
+    .subscribe{
+      flex-direction: column;
+      div {
+        justify-content: center;
+
+        input {
+          height: 2em;
+
+        }
+
+        button {
+          height: 2em;
+        }
+      }
+      .socialmedia{
+        a {
+          img {
+            margin: 0.5em;
+            display: flex;
+            width: 30px;
+            height: 30px;
+           // background: cornflowerblue;
+            border-radius: 36px;
+            //padding: 50px;
+          }
+        }
+
+      }
 
     }
   }

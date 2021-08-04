@@ -1,12 +1,7 @@
-body
-{
-  margin: 0;
-  padding: 0;
-
-
-  background: #232323;
-  color: #cdcdcd;
-  font-family: "Avenir Next", "Avenir", sans-serif;
+nav{
+  display: flex;
+  align-self: center;
+  height: 50%;
 }
 
 #menuToggle
@@ -14,12 +9,12 @@ body
   display: block;
   position: relative;
   top: 0.1em;
-  left: 20em;
+ /// left: 100%;
 
   z-index: 1;
 
-  -webkit-user-select: none;
-  user-select: none;
+ // -webkit-user-select: none;
+ // user-select: none;
 }
 
 #menuToggle a
@@ -42,8 +37,8 @@ body
   width: 40px;
   height: 32px;
   position: absolute;
-  top: -7px;
-  left: -5px;
+ // top: -7px;
+  //left: -5px;
 
   cursor: pointer;
 
@@ -86,10 +81,7 @@ body
   transform-origin: 0% 100%;
 }
 
-/*
- * Transform all the slices of hamburger
- * into a crossmark.
- */
+
 #menuToggle input:checked ~ span
 {
   opacity: 1;
@@ -121,10 +113,11 @@ body
 #menu
 {
   position: absolute;
-  width: 300px;
+  width:  300px;
   margin: -10em 0 0 -16em;
   padding: 50px;
   padding-top: 125px;
+  left: 100%;
 
   background: #ededed;
   list-style-type: none;

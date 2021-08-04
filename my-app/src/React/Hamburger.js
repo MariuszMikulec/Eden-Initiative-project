@@ -11,6 +11,9 @@ function Hamburger() {
                     <a href="#main page">
                         <li>Strona główna</li>
                     </a>
+                    <a href="#projects">
+                        <li>Projekty</li>
+                    </a>
                     <a href="#about">
                         <li>O nas</li>
                     </a>
