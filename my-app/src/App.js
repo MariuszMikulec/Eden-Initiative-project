@@ -2,11 +2,13 @@ import React, {Fragment} from "react";
 import './scss/App.scss';
 import Covid19Counter from "./React/Covid19Counter";
 import Hamburger from "./React/Hamburger";
+import Carousel from "./React/Carousel"
 import arrow from './pic/arrow_icon.png'
 import seamus from './pic/Seamus_Green.jpg';
 import fb from './pic/facebook.jpg';
 import tw from './pic/twitter.ico';
 import li from './pic/LinkedIn.png';
+//import {Carousel} from "bootstrap";
 
 function App() {
   return (
@@ -27,7 +29,7 @@ function App() {
 
         <section id="project">
           <div>
-
+            <Carousel/>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem dignissimos dolor id nobis officia placeat repudiandae sunt vel vitae?</p>
 
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam iste libero numquam sit suscipit! Ab ipsam officiis sapiente tenetur vel.</p>

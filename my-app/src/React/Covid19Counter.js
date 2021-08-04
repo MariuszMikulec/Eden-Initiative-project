@@ -6,9 +6,8 @@ export default function Covid19Counter(){
    // const [counter, setCounter] = useState(0);
     const [country, setCountry] = useState('poland');
     const [data, setData] = useState();
-    const ct = window.prompt("Covid-19 Cases tracker. Podaj nazwę kraju:");
-
-       setCountry(ct)
+   // const ct = window.prompt("Covid-19 Cases tracker. Podaj nazwę kraju:");
+      //   setCountry(ct);
 
 
 
