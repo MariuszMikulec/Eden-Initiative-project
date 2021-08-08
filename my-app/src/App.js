@@ -1,9 +1,9 @@
 import React, {Fragment} from "react";
-import './scss/App.scss';
 import Covid19Counter from "./React/Covid19Counter";
 import Hamburger from "./React/Hamburger";
-import Carousel from "./React/Carousel"
-import arrow from './pic/arrow_icon.png'
+import Carousel from "./React/Carousel";
+import './scss/App.scss';
+import arrow from './pic/dooble-arrow.png'
 import seamus from './pic/Seamus_Green.jpg';
 import fb from './pic/facebook.jpg';
 import tw from './pic/twitter.ico';
@@ -30,9 +30,6 @@ function App() {
         <section id="project">
           <div>
             <Carousel/>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem dignissimos dolor id nobis officia placeat repudiandae sunt vel vitae?</p>
-
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam iste libero numquam sit suscipit! Ab ipsam officiis sapiente tenetur vel.</p>
           </div>
         </section>
 
@@ -63,20 +60,21 @@ function App() {
             <div className="subscribe">
               <div>
                 <input />
-                <button>Subskrybuj</button>
+                <button><b>Subskrybuj!</b></button>
               </div>
               <div className="socialmedia">
-                <a href="#contact"><img className='sm' src={fb} alt='fb'/></a>
-                <a href="#contact"><img className='sm' src={tw} alt='tw'/></a>
-                <a href="#contact"><img className='sm' src={li} alt='li'/></a>
+                <a href="www.facebook.com"><img className='sm' src={fb} alt='fb'/></a>
+                <a href="www.twitter.com"><img className='sm' src={tw} alt='tw'/></a>
+                <a href="www.lindedin.com"><img className='sm' src={li} alt='li'/></a>
               </div>
 
             </div>
           </div>
-          <p>Created by Mariusz Mikulec</p>
+
         </footer>
+        <p style={{color:"black"}}><b>Created by Mariusz Mikulec</b></p>
     </Fragment>
   );
-};
+}
 
 export default App;

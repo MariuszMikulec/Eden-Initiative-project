@@ -1,8 +1,8 @@
 import React from "react";
 import {Carousel} from "react-bootstrap";
-import '../scss/elements/_carousel.scss'
-import ps from '../pic/panele-słoneczne-pvgw.jpg'
-import wt from '../pic/wingTower.webp'
+//import '../scss/elements/_carousel.scss'
+import solar from '../pic/panele-słoneczne-pvgw.jpg'
+import wingTower from '../pic/wiatrtowe słupowe.jpg'
 import iter from '../pic/iter.jpg'
 export default function carousel (){
     return(
@@ -10,24 +10,36 @@ export default function carousel (){
         <Carousel.Item>
             <img
                 className="d-block w-100"
-                src={ps}
+                src={solar}
                 alt="First slide"
             />
             <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <div className="text-container">
+                <h3>Ogniwa Petrowskitowe</h3>
+                <p><b> Innowacja na rynku fotowoltaiki. Ogniwa perowskitowe drukowane są na folii PET dzięki temu są cienkie,
+                    lekkie, elastyczne i wydajne, nawet w miejscach, które nie mają
+                    idealnego oświetlenia i we wnętrzach budynków jedynie ze sztucznym oświetleniem.
+                    Na dodatek, można je także produkować w różnych kolorach!</b></p>
+                <a><p>Dowiedz się więcej!</p></a>
+                </div>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
             <img
                 className="d-block w-100"
-                src={wt}
+                src={wingTower}
                 alt="Second slide"
             />
 
             <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div className="text-container">
+                <h3>Pionowa elektrownia wiatrowa</h3>
+                <p><b> Pionowa turbina wiatrowa jest znacznie efektywniejsza od klasycznych wiatraków,
+                    ponieważ pracuje przy małej sile wiatru i niezależnie od jego kierunku.  Elektrownia pracuje cicho.
+                    nie powoduje drgań, a co najważniejsze nie wytwarza groźnych dla środowiska
+                    infradźwięków.</b></p>
+                    <a><p>Dowiedz się więcej!</p></a>
+                </div>
             </Carousel.Caption>
         </Carousel.Item>
         <Carousel.Item>
@@ -38,8 +50,14 @@ export default function carousel (){
             />
 
             <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                <div className="text-container">
+                <h3>Projekt ITER </h3>
+                <p><b>ITER(International Thermonuclear Experimental Reactor)
+                    To reaktor termojądrowy i jednocześnie pełen rozmachu projekt badawczy. Pozwoli sprawdzić,
+                    czy da się bezpiecznie produkować energię uzyskaną
+                    poprzez kontrolowaną syntezę jądrową na dużą skalę.</b></p>
+                    <a><p>Dowiedz się więcej!</p></a>
+                </div>
             </Carousel.Caption>
         </Carousel.Item>
     </Carousel>
