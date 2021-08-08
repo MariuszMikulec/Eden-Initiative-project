@@ -3,7 +3,7 @@ import React, {useEffect, useState} from "react";
 
 export default function Covid19Counter(){
 
-    const [country, setCountry] = useState(null);
+    const [country, setCountry] = useState("pl");
     const [data, setData] = useState(null);
 
 
@@ -31,8 +31,8 @@ export default function Covid19Counter(){
 
         <>
             <div className="covid-container">
-                {data ? <p className="tracker">Liczba zakażeń Covid-19: {data.Confirmed} </p> : <p>loading...</p>}
-                {data ? <p className="tracker">Na dzień: {data.Date} </p> : <p>loading...</p>}
+                {data ? <p className="tracker A">Liczba zakażeń Covid-19: {data.Confirmed} </p> : <p>loading...</p>}
+                {data ? <p className="tracker B">Na dzień: {data.Date} </p> : <p>loading...</p>}
             </div>
         </>
            )
