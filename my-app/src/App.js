@@ -8,6 +8,7 @@ import seamus from './pic/Seamus_Green.jpg';
 import fb from './pic/facebook.jpg';
 import tw from './pic/twitter.ico';
 import li from './pic/LinkedIn.png';
+import CountryChoseModal from "./React/CountryChoseModal";
 //import {Carousel} from "bootstrap";
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
         <div className="joinButton">   <a className="join" href='#about'><h2>Join us!</h2></a></div>
       </header>
 
-
+<CountryChoseModal/>
         <Covid19Counter/>
 
 
@@ -59,8 +60,10 @@ function App() {
             </div>
             <div className="subscribe">
               <div>
-                <input />
-                <button><b>Subskrybuj!</b></button>
+                <form>
+                  <input type="mail" name="mail"/>
+                  <button type="submit"><b>Subskrybuj!</b></button>
+                </form>
               </div>
               <div className="socialmedia">
                 <a href="www.facebook.com"><img className='sm' src={fb} alt='fb'/></a>

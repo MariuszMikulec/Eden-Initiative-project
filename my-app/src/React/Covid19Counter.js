@@ -1,15 +1,17 @@
 import React, {useEffect, useState} from "react";
+import CountryChoseModal from "./CountryChoseModal";
 
 
 export default function Covid19Counter(){
 
     const [country, setCountry] = useState("pl");
     const [data, setData] = useState(null);
+   // const submmit =()=> {setCountry(input.value)}
 
 
-        useState((country) => {
-            setCountry(window.prompt("Covid-19 Cases tracker. Podaj nazwę kraju:"));
-        });
+      //  useState((country) => {
+
+      //  });
     console.log(country)
     useEffect(() =>{
 
@@ -31,6 +33,8 @@ export default function Covid19Counter(){
 
         <>
             <div className="covid-container">
+
+
                 {data ? <p className="tracker A">Liczba zakażeń Covid-19: {data.Confirmed} </p> : <p>loading...</p>}
                 {data ? <p className="tracker B">Na dzień: {data.Date} </p> : <p>loading...</p>}
             </div>
