@@ -2,13 +2,14 @@ import React, {Fragment} from "react";
 import Covid19Counter from "./React/Covid19Counter";
 import Hamburger from "./React/Hamburger";
 import Carousel from "./React/Carousel";
-import './scss/App.scss';
+//import './scss/App.scss';
 import arrow from './pic/dooble-arrow.png'
 import seamus from './pic/Seamus_Green.jpg';
 import fb from './pic/facebook.jpg';
 import tw from './pic/twitter.ico';
 import li from './pic/LinkedIn.png';
-import CountryChoseModal from "./React/CountryChoseModal";
+
+import JoinForm from "./React/JoinForm";
 //import {Carousel} from "bootstrap";
 
 function App() {
@@ -21,10 +22,10 @@ function App() {
           <Hamburger/>
 
         </div>
-        <div className="joinButton">   <a className="join" href='#about'><h2>Join us!</h2></a></div>
+
+      <JoinForm/>
       </header>
 
-<CountryChoseModal/>
         <Covid19Counter/>
 
 
@@ -44,15 +45,16 @@ function App() {
           </div>
           <p>Seamus Green jest założycielem i duchowym ojcem organizacji Eco, Eden Initiative.</p>
         </section>
+        <section className="arrowCont">
+          <img />
+          <div className="arrow">
+            <a href="#main page"> <img className="scrollTopButton" src={arrow} alt=""/></a>
+          </div>
+        </section>
 
 
-<section className="arrowCont">
-        <img />
-        <div className="arrow">
-          <a href="#main page"> <img className="scrollTopButton" src={arrow} alt=""/></a>
-        </div>
-</section>
         <footer id="contact">
+
           <div>
             <div className="contact">
               <h2>Kontakt:</h2>
@@ -79,5 +81,5 @@ function App() {
     </Fragment>
   );
 }
-
 export default App;
+

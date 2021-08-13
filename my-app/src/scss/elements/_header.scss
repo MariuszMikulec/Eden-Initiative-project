@@ -81,12 +81,16 @@ background: lightgreen;
     .scrollTopButton {
       position: relative;
       background: greenyellow;
-      border-radius: 36px;
+      border-radius: 360px;
       width: 5vw;
 
-      top: -83%;
-      @media (width>601px) {
-        top: -72%
+      top: -94%;
+      @media (width>400px){
+        top: -76%;
+      }
+      @media (width>901px) {
+        top: -59%;
+        width:4vw;
       }
       z-index: 1;
     }
