@@ -11,7 +11,7 @@ function Hamburger() {
                     <a href="#main page">
                         <li>Strona główna</li>
                     </a>
-                    <a href="#projects">
+                    <a href="#project">
                         <li>Projekty</li>
                     </a>
                     <a href="#about">

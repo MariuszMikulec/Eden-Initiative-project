@@ -5,7 +5,6 @@ import Modal from "react-bootstrap/Modal";
 
 export default function Covid19Counter() {
 
-    // const [country, setCountry] = useState("pl");
     const [data, setData] = useState(null);
     /* Formularz wyboru kraju początek */
     const [show, setShow] = useState(true);
@@ -17,27 +16,24 @@ export default function Covid19Counter() {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-
-        console.log(country);
+        fetch(`https://api.covid19api.com/live/country/${country}/status/confirmed`) //{ mode: 'no-cors'})
+            .then(res => res.json())
+            .then(data => {
+                console.log(data[data.length - 1]);
+                setData(data[data.length - 1])
+            })
     };
     const handleClose = () => setShow(false);
     /*Formularz wyboru kraju koniec  */
 
-    console.log(country)
-
     useEffect(() => {
-        console.log(country);
-
-
         fetch(`https://api.covid19api.com/live/country/${country}/status/confirmed`) //{ mode: 'no-cors'})
             .then(res => res.json())
             .then(data => {
-                console.log(data, data[data.length - 1]);
+                console.log(data[data.length - 1]);
                 setData(data[data.length - 1])
             })
     }, [])
-
-    console.log(country)
 
     return (
         <>

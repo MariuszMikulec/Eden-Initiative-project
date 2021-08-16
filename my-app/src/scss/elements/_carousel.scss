@@ -1,6 +1,7 @@
 @import "~bootstrap/scss/bootstrap.scss";
 .w-100{
-  height: 50vw;
+  height: 64vw;
+
   @media (width<594px) {
     height: 115vw;
   }

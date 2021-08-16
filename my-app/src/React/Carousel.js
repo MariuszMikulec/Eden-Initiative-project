@@ -4,6 +4,7 @@ import {Carousel} from "react-bootstrap";
 import solar from '../pic/panele-słoneczne-pvgw.jpg'
 import wingTower from '../pic/wiatrtowe słupowe.jpg'
 import iter from '../pic/iter.jpg'
+import {Link} from "react-router-dom";
 export default function carousel (){
     return(
     <Carousel>
@@ -20,7 +21,7 @@ export default function carousel (){
                     lekkie, elastyczne i wydajne, nawet w miejscach, które nie mają
                     idealnego oświetlenia i we wnętrzach budynków jedynie ze sztucznym oświetleniem.
                     Na dodatek, można je także produkować w różnych kolorach!</b></p>
-                <a><p>Dowiedz się więcej!</p></a>
+                <Link to="/Projects"><p>Dowiedz się więcej!</p></Link>
                 </div>
             </Carousel.Caption>
         </Carousel.Item>
