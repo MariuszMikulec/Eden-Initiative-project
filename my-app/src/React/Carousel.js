@@ -16,12 +16,12 @@ export default function carousel (){
             />
             <Carousel.Caption>
                 <div className="text-container">
-                <h3>Ogniwa Petrowskitowe</h3>
-                <p><b> Innowacja na rynku fotowoltaiki. Ogniwa perowskitowe drukowane są na folii PET dzięki temu są cienkie,
-                    lekkie, elastyczne i wydajne, nawet w miejscach, które nie mają
-                    idealnego oświetlenia i we wnętrzach budynków jedynie ze sztucznym oświetleniem.
-                    Na dodatek, można je także produkować w różnych kolorach!</b></p>
-                <Link to="/Projects"><p>Dowiedz się więcej!</p></Link>
+                    <h3>Ogniwa Petrowskitowe</h3>
+                    <p><b> Innowacja na rynku fotowoltaiki. Ogniwa perowskitowe drukowane są na folii PET dzięki temu są cienkie,
+                        lekkie, elastyczne i wydajne, nawet w miejscach, które nie mają
+                        idealnego oświetlenia i we wnętrzach budynków jedynie ze sztucznym oświetleniem.
+                        Na dodatek, można je także produkować w różnych kolorach!</b></p>
+                    <Link to="/Projects"><p>Dowiedz się więcej!</p></Link>
                 </div>
             </Carousel.Caption>
         </Carousel.Item>
@@ -39,7 +39,7 @@ export default function carousel (){
                     ponieważ pracuje przy małej sile wiatru i niezależnie od jego kierunku.  Elektrownia pracuje cicho.
                     nie powoduje drgań, a co najważniejsze nie wytwarza groźnych dla środowiska
                     infradźwięków.</b></p>
-                    <a><p>Dowiedz się więcej!</p></a>
+                    <Link><p>Dowiedz się więcej!</p></Link>
                 </div>
             </Carousel.Caption>
         </Carousel.Item>
@@ -57,7 +57,7 @@ export default function carousel (){
                     To reaktor termojądrowy i jednocześnie pełen rozmachu projekt badawczy. Pozwoli sprawdzić,
                     czy da się bezpiecznie produkować energię uzyskaną
                     poprzez kontrolowaną syntezę jądrową na dużą skalę.</b></p>
-                    <a><p>Dowiedz się więcej!</p></a>
+                    <Link><p>Dowiedz się więcej!</p></Link>
                 </div>
             </Carousel.Caption>
         </Carousel.Item>

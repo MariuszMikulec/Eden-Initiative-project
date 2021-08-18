@@ -1,4 +1,4 @@
-import React, {Fragment} from "react";
+import React, {Fragment, useState} from "react";
 import Covid19Counter from "./React/Covid19Counter";
 import Hamburger from "./React/Hamburger";
 import Carousel from "./React/Carousel";
@@ -11,7 +11,21 @@ import li from './pic/LinkedIn.png';
 import JoinForm from "./React/JoinForm";
 
 function LandingPage() {
+    const [mail, setMail] = useState()
 
+   const handleChange=(e)=>{
+       const {name, value} = e.target;
+       setMail(prevState => {
+           return {
+               ...prevState,
+               [name]: value
+           }
+       });
+   }
+   const handleSubmit=(e)=>{
+       e.preventDefault();
+       console.log(mail);
+   }
 
     return (
         <Fragment>
@@ -59,9 +73,9 @@ function LandingPage() {
                     </div>
                     <div className="subscribe">
                         <div>
-                            <form onSubmit={JoinForm.form}>
+                            <form onSubmit={handleSubmit}>
                                 <label>
-                                <input type="mail" name="mail"/>
+                                <input type="mail" name="mail" onChange={handleChange}/>
                                 </label>
                                 <button type="submit"><b>Subskrybuj!</b></button>
                             </form>
